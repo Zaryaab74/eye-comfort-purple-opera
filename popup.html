@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><title>Eye Comfort</title></head>
+<body>
+  <div style="padding:12px;width:260px">
+    <h3>Eye Comfort Purple</h3>
+    <p>A soft purple theme for less eye strain.</p>
+    <button id="open">Open New Tab</button>
+  </div>
+  <script>
+    document.getElementById('open').addEventListener('click', () => {
+      chrome.tabs.create({url: 'newtab.html'});
+    });
+  </script>
+</body>
+</html>
